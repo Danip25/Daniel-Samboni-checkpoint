@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+
+}
+
+.red{
+    color: red;
+}
+
+.white {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 16px;
+    padding: 10px;
+    color: white;
+}
+
+.active {
+    background-color: red;
+}
+
+
+.content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 70vh;
+    /* background-image: url(../img/image-1.jpg); */
+}
+
+.content img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content article section {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+h3,h4{
+    text-align: center;
+}
+
+.osaka{
+    background-image: url(../img/image-3.jpg);
+}
+
+.kyoto {
+    background-image: url(../img/image-4.jpg);
+}
+
+.tokyo {
+    background-image: url(../img/image-5.jpg);
+}
+
+section p {
+    text-align: center;
+}
+
+/* body {
+    background-image: url(../img/image-1.jpg);
+} */
+
+/* th td {
+    border: 1px solid black;
+} */
+
+
+@media screen and (max-width: 768px){
+
+ 
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
